@@ -1,0 +1,280 @@
+/*This is main style css that shall be used in the landing page index.html*/
+/*this is to define global variable of colors specially as theme of the webpage*/
+:root{
+    --ycolor:#FFC634;
+    --pcolor:#FF6DF0;
+    --p80color:rgba(255,109,240,0.8);
+    --b75color:rgba(0,0,0,0.75);    
+}
+
+*{
+    margin:0;
+    border:0;
+    padding:0;    
+}
+
+body{
+    min-width: 1100px;
+}
+
+/*Hero header*/
+header#hero{
+    position:relative;
+    padding:40px 40px 40px;
+    background-color: var(--ycolor);
+    height: 460px;
+}
+/*Hero star png image as background*/
+/*header img#starpic{
+    position:  absolute;
+    top:0;
+    left:0;    
+    height: 353px;
+    width: 353px;
+    opacity=0.8;
+    z-index: -1;
+}*/
+/*svg star shape under div element*/
+div#starpic{
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+/* Student img element */
+header img#studentpic{
+    position: absolute;
+    width: 256.73px;
+    height: 457.34px;
+    right: 40px;    
+    top: 40px;    
+    border: 4px solid #F5F5F5;
+    transform: rotate(3.32deg);
+}
+
+/*main hero header items styling*/
+header #hiline{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    left: 142px;
+    top: 179px;
+    z-index: 2;
+}
+header #studentname{
+    position: absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 42px;
+    left: 142px;
+    top: 210px;
+    z-index: 2;
+}
+header #description{
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 40%;
+    left: 142px;
+    top: 270px;
+    z-index: 2;
+}
+a#explore{
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    left: 142px;
+    top: 420px;    
+    padding:2px 10px;
+    color:var(--ycolor);
+    border-radius: 10px;
+    z-index: 2; 
+}
+a#explore:link{
+    background-color: var(--b75color); 
+}
+a#explore:hover{
+    background-color: var(--pcolor);
+    color: black;
+}
+
+/*Styling navigation bar*/
+nav#mainmenu{
+    position:sticky;
+    top:0;   
+    width: 100hv;
+    height: 38px;
+    background-color: var(--b75color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    z-index:3;    
+}
+nav#mainmenu ul{
+    position: absolute;
+    display: flex;
+    list-style: none;    
+    right: 40px;   
+}
+nav#mainmenu ul li{
+    padding: 10px 20px;
+}
+nav#mainmenu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav#mainmenu a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*About me section style*/
+/*About me article*/
+section#aboutmesection{
+    padding:40px 40px;
+    background-color: var(--pcolor);
+    height: 1060px;
+}
+section header.sectiontitle, footer p#heading{
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: cursive, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:26pt;
+}
+article#mybio{    
+    display: flex; 
+}
+img#mybiopic{
+    width:25%;
+    height: 500px;       
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;       
+}
+article#mybio div#aboutmedetail{
+    width: 100%;
+    height: 460px;
+    font-family:cursive;
+    font-size: 1.05em;
+    text-indent: 50pt;
+    text-align: justify;
+    background-color: white;    
+    border-radius: 0px 10px 10px 0px;
+    padding:20px;
+    margin-bottom: 20px;
+}
+/*family tree article*/
+article#familytree{
+    width: 100%;
+    height: 510px;
+    background-color: white;
+    border-radius: 10px;    
+}
+article#familytree img#familytreeicon{
+    width: 314px;
+    height: 314px;
+    border-radius: 10px;
+}
+article#familytree img#familytreeimg{
+    position: absolute;             
+    z-index:0;    
+}
+article#familytree p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2em;
+    padding-left: 40px;
+    color: var(--pcolor);
+}
+
+/*Contact me and send me message form in the footer style*/
+footer{        
+    width: 100%;
+    height: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1;
+    background-color: var(--b75color);       
+}
+footer p#heading{
+    position: relative;
+    top: 20px;
+}
+footer div#footerwrapper{
+    display: flex; 
+    padding: 40px;  
+}
+footer div#footercontent{
+    width: 35%;    
+}
+
+footer #homeaddress, #schooladdress{    
+    top:10px;
+    color:var(--ycolor);
+    font-weight: bold;
+    font-size:1.1em;
+}
+footer #homeaddressdetail, #schooladdressdetail{    
+    top:10px;
+    color:white;
+}
+footer #copyrightinfo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    color:rgba(255,255,255,0.5);  
+}
+footer div#contactform{    
+    position: relative;    
+    width: 595px;
+    height: 460px;
+    background-color: white;
+    border-radius: 10px;   
+}
+footer div#topbutton{
+    position: fixed;
+    background-color: var(--ycolor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;        
+    right: 40px;
+    bottom:40px;
+    z-index: 1;
+    opacity: 0.8;    
+}
+footer #toplink{
+    text-decoration: none;
+    color:black;
+}
+footer #toplink:hover{
+    color:white;
+}
+/*form style*/
+input, textarea, button{    
+    width: 97%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    margin: 7px;
+    padding: 8px;
+    border: 1px solid var(--pcolor);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+button{
+    background-color: var(--pcolor);
+    color:white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+button:hover{
+    background-color: var(--ycolor);
+    color:black;    
+}
+
+/*iframe for youtube video embed*/
+iframe#familyvideo{
+    z-index: 1;
+}

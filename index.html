@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My online portfolio - Prajyaan Khadka</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"> <!--This tag defines the relationship between the current document and an external resource-->
+    </head>
+    <body>
+        <a name="home"></a>
+        <header id="hero"> <!--Defines a header for a document or a section. Example: Hero content-->
+            <p id="hiline">Hi, I'm</p>
+            <p id="studentname">Prajyaan Khadka</p>
+            <p id="description">I am student of Butwal Public School, currently studying in standard 5. This is my e-portfolio to demo my bio, academics, extracurricular activities, projects, skills and interests.</p>
+            <a href="#" id="explore" title="To view portfolio!">EXPLORE MY WORK →</a>
+            <!--<img src="img/star.png" alt="star shape png file" id="starpic">-->
+            <div id="starpic">
+                <svg width="379" height="404" viewBox="0 0 379 404" fill="none" xmlns="http://www.w3.org/2000/svg" id="starpic">
+                    <path d="M293.49 -41.6862C293.49 -41.6862 236.979 79.1007 255.49 157.55C274 236 378.992 318.443 378.992 318.443C378.992 318.443 273.51 258.885 179.755 280.443C86 302 18.8625 403.945 18.8625 403.945C18.8625 403.945 75.16 281.775 56.8628 204.708C38.5656 127.641 -66.6392 43.8155 -66.6392 43.8155C-66.6392 43.8155 55.5303 100.113 132.597 81.8159C209.664 63.5187 293.49 -41.6862 293.49 -41.6862Z" fill="#FF6DF0" fill-opacity="0.6"/>
+                </svg>
+            </div>
+            <img src="img/prajyaan.jpg" alt="student picture" id="studentpic">            
+        </header>        
+        <nav id="mainmenu"><!--Defines a set of navigation links. Example: Menubar for different content within or another webpage-->
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><a href="#">ACADEMICS</a></li>
+                <li><a href="#">ECA</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#contactme">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <a name="aboutme"></a>
+        <section id="aboutmesection"> <!--Defines a section in a document. Example: About me content with image first article and family tree as another article in a section-->
+            <header class="sectiontitle">ABOUT ME</header>            
+            <article id="mybio"> <!--Defines an independent, self-contained content. Example: About me and Family tree article-->
+                <img src="img/aboutme.jpg" alt="my bio picture" id="mybiopic">               
+                <div id="aboutmedetail"> <!--This element is used as a container for other HTML elements. Example: Multiple paragraph as a single story item-->
+                    <p>Prajyaan Khadka, a diligent student from town of Butwal, Nepal, is currently pursuing his academic journey at Butwal Public School. With a keen interest in various subjects, Prajyaan approaches his studies with dedication and enthusiasm, constantly striving for excellence in every endeavor.</p>
+                    <p>Born with an insatiable curiosity and a thirst for knowledge, Prajyaan has always been eager to explore new ideas and concepts. His inquisitive nature drives him to delve deeper into his studies, seeking to uncover the underlying principles behind every subject he encounters.</p>
+                    <p>Outside the classroom, Prajyaan is known for his passion for extracurricular activities. Whether it's participating in debates, engaging in sports, or contributing to community service initiatives, he eagerly seizes every opportunity to broaden his horizons and develop new skills. Despite his academic and extracurricular commitments, Prajyaan remains deeply connected to his roots and takes great pride in his cultural heritage. He actively participates in cultural events and celebrations, showcasing his talents and fostering a sense of unity within his community.</p>
+                    <p>With a steadfast determination to excel in both academics and personal growth, Prajyaan Khadka embodies the spirit of a true scholar and a responsible citizen. As he continues on his educational journey, he remains committed to making a positive impact on the world around him, inspired by the values instilled in him by his family, teachers, and peers.</p>
+                </div>
+            </article> <!--Defines an independent, self-contained content. Example: About me and Family tree article-->
+            <article id="familytree">
+                <img src="img/family-tree-icon.jpg" alt="tree icon" id="familytreeicon">
+                <img src="img/prajyaankhadka-familytree.png" alt="family tree picture of Prajyaan Khadka" id="familytreeimg">
+                <p>Family Tree</p>
+            </article>
+        </section>
+        <a name="contactme"></a>
+        <footer><!--Defines a footer for a document or a section. Example: Contact me-->            
+            <p id="heading">CONTACT ME</p>
+            <div id="footerwrapper">
+                <div id="footercontent">
+                    <p id="homeaddress">Home Address:</p>
+                    <p id="homeaddressdetail">
+                        Shankarpur, Tilottama-9, Rupandehi<br>
+                        Lumbini Province-5, Nepal<br>
+                        Mobile: 9860129682
+                    </p>
+                    <br>
+                    <p id="schooladdress">School Address:</p>
+                    <p id="schooladdressdetail">
+                        Butwal Public School<br>
+                        Yogikuti, Tilottama-3, Rupandehi<br>
+                        Lumbini Province-5, Nepal<br>
+                        Phone: 071-420094
+                    </p>
+                    <br>
+                    <iframe width="320px" height="200px" src="https://www.youtube.com/embed/4is5JyfmnCw?AutoPlay=1" id="familyvideo">
+                    </iframe>
+                    <br>
+                    <p id="copyrightinfo">&copy; 2024, Prajyaan Khadka e-portfolio.<br>&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved!</p>
+                </div>
+                <div id="contactform"> <!--This element is used as a container for other HTML elements. Example: entire form elements under a hood-->
+                    <form name="msgme" autocomplete="off"> <!--An HTML form is used to collect user input. The user input is most often sent to a server for processing.-->
+                        <input type="text" placeholder="Name" id="txtname">
+                        <input type="text" placeholder="Email address" id="txtaddress">
+                        <input type="text" placeholder="Subject" id="txtsubject">
+                        <textarea rows="8" columns="50" placeholder="Message here..."></textarea>
+                        <button name="send">SEND</button>
+                    </form>            
+                </div>
+            </div>
+            <div id="topbutton"><!--This element is used as a container for other HTML elements. Example: top navigation button in the footer-->
+                <a href="#home" id="toplink">
+                <p id="topimg">▲</p>
+                <p id="top">TOP</p>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
